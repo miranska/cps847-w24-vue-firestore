@@ -3,7 +3,8 @@
 import { useFirestore, useCollection } from 'vuefire'
 const db = useFirestore()
 
-// Under the VueFire probably does something like this
+// Under the hood, VueFire probably does something like this:
+//
 // Use onMounted lifecycle hook to subscribe to the Firestore collection
 // onMounted(() => {
 //   // onSnapshot listens for real-time updates to the todos collection
